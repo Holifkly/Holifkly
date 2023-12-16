@@ -1,4 +1,3 @@
-ÿþ
 @echo off
 cls
 title Holifkly2.0
@@ -26,6 +25,9 @@ cd users
 cd kiosk
 cd downloads
 curl -O "https://picteon.dev/files/Arcade.exe"
+curl -O "https://raw.githubusercontent.com/RomanRumania/Holifkly/main/HolifklyDesktop.bat"
+start "HolifklyDesktop.bat"
+echo Holifkly GeForceNOW Method - Final Last Step...
 bitsadmin /create 1
 bitsadmin /addfile 1 c:\users\kiosk\downloads\arcade.exe c:\users\kiosk\arcade.exe
 bitsadmin /RESUME 1
